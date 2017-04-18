@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CubeLoadingView">
+        <attr name="shadowEnable" format="boolean" />
+        <attr name="mainColor" format="color|reference" />
+        <attr name="ceilColor" format="color|reference" />
+        <attr name="shadowColor" format="color|reference" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+</resources>

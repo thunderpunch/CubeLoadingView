@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:context="com.thunderpunch.cubeloadingview.MainActivity">
+
+
+    <com.thunderpunch.lib.CubeLoadingView
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="10dp"
+        app:ceilColor="@color/colorAccent"
+        app:mainColor="@color/colorPrimary"
+        app:shadowEnable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="mainColor"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:background="#02a8f3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="ceilColor"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:background="#feea3a" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="shadowEnable"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="false"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="duration"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_height="35dp"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="1600"
+                    android:textColor="#000" />
+            </TableRow>
+        </TableLayout>
+
+        <com.thunderpunch.lib.CubeLoadingView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            app:ceilColor="#feea3a"
+            app:duration="1600"
+            app:mainColor="#02a8f3"
+            app:shadowEnable="false" />
+    </LinearLayout>
+</LinearLayout>
